@@ -31,10 +31,10 @@
                           <img src="{% static 'user.jpg' %}" width="50" class="rounded-circle">
                           <div class="ms-2 d-flex flex-column">
                              <div class="d-flex flex-row align-items-center">
-                                  <h6>Bir kunlik rejim</h6>
+                                  <h6>{{post.headline}}</h6>
                               <span class="dots"></span>
                              </div>
-                             <span class="days-ago">2 days ago</span>
+                             <span class="days-ago">{{ post.created }}</span>
                           </div>
                       </div>
                     </div>
